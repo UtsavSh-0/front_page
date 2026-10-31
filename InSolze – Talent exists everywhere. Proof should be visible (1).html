@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>InSolze – Talent exists everywhere. Proof should be visible.</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--k:#050505;--k2:#0e0e11;--ln:#1f1f25;--v:#8b5cf6;--v2:#a855f7;--p:#ec4899;--l:#e9d5ff;--y:#f59e0b;--t:#f5f5f7;--m:#9a9aa6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth}*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--k);color:var(--t);font-family:Manrope,system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid var(--v2);outline-offset:3px}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3,p{margin:0}
+h1{font-size:clamp(42px,7vw,84px);line-height:1.02;font-weight:700;letter-spacing:-.04em}
+h2{font-size:clamp(32px,4.8vw,56px);line-height:1.08;font-weight:700;letter-spacing:-.035em}
+.c{text-align:center}.mut{color:var(--m)}
+.lead{max-width:540px;font-size:16px;color:var(--m);margin:20px auto 0}
+.btn{display:inline-flex;align-items:center;border-radius:99px;padding:13px 24px;font:600 14px/1 inherit;font-family:inherit;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.b1{background:#fff;color:#0a0a0a}.b1:hover{box-shadow:0 10px 30px rgba(168,85,247,.45)}
+.b2{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#fff}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.logo i{width:28px;height:28px;border-radius:8px;background:linear-gradient(140deg,var(--p),var(--v));display:grid;place-items:center;font:800 15px/1 inherit;font-family:inherit;font-style:normal}
+.gl{background:linear-gradient(160deg,rgba(168,85,247,.16),rgba(168,85,247,.05));backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.14);border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.12)}
+.chip{display:inline-block;font-size:10.5px;padding:3px 9px;border-radius:99px;background:rgba(255,255,255,.08);color:#d4d4d8;margin:3px 3px 0 0}
+.chip.v{background:rgba(168,85,247,.25);color:var(--l)}
+.av{display:inline-block;width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,var(--l),var(--v));border:2px solid #17141f;margin-right:-7px}
+.av.b{background:linear-gradient(135deg,#fde68a,var(--p))}.av.c2{background:linear-gradient(135deg,#a5f3fc,var(--v))}
+.th{height:60px;border-radius:10px;background:linear-gradient(135deg,#4c1d95,#be185d 130%);margin-bottom:9px}
+.th.b{background:linear-gradient(135deg,#1e3a8a,#7c3aed)}.th.c3{background:linear-gradient(135deg,#7c2d12,#db2777)}
+small{color:var(--m);font-size:11px}
+.pr{height:5px;border-radius:9px;background:rgba(255,255,255,.1);overflow:hidden;margin-top:8px}.pr span{display:block;height:100%;background:linear-gradient(90deg,var(--v),var(--p))}
+.il{font-size:11px;color:#71717a;text-align:center;margin-top:18px}
+
+/* hero */
+.hero{padding:16px}
+.frame{position:relative;max-width:1240px;margin:0 auto;border-radius:36px;border:1px solid var(--ln);overflow:hidden;padding:28px 28px 0;
+background:radial-gradient(70% 45% at 50% 105%,rgba(236,72,153,.55),transparent 70%),radial-gradient(60% 50% at 20% 85%,rgba(139,92,246,.5),transparent 70%),radial-gradient(40% 30% at 85% 95%,rgba(245,158,11,.28),transparent 70%),#07060a}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.14em;color:var(--m);font-weight:600}
+.hh{padding:70px 0 0;text-align:center}
+.stage{position:relative;height:640px;margin-top:40px;perspective:1600px}
+.phone{position:absolute;left:50%;top:0;width:262px;height:540px;margin-left:-131px;border-radius:44px;background:#0a0a0d;border:7px solid #232329;box-shadow:0 0 0 1px #3a3a42,0 40px 120px rgba(168,85,247,.55);padding:14px;transform:rotateY(-10deg) rotateX(5deg);animation:fl 7s ease-in-out infinite;overflow:hidden;z-index:2}
+.phone::before{content:"";position:absolute;top:9px;left:50%;width:76px;height:22px;margin-left:-38px;border-radius:14px;background:#000}
+@keyframes fl{50%{transform:rotateY(-6deg) rotateX(3deg) translateY(-14px)}}
+.sc{margin-top:26px;font-size:12px}
+.sc .hd{display:flex;gap:10px;align-items:center}.sc .hd i{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--l),var(--p))}
+.sc .hd b{display:block;font-size:14px}
+.sc .bx{background:#16161b;border-radius:14px;padding:11px;margin-top:11px}
+.sc .st{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:11px;text-align:center}
+.sc .st div{background:#16161b;border-radius:11px;padding:8px 4px}.sc .st b{display:block;font-size:15px}
+.fc{position:absolute;width:224px;padding:15px;font-size:12px;z-index:3;animation:fl2 6s ease-in-out infinite}
+.fc h3{font-size:14px;font-weight:700;margin-bottom:8px}
+@keyframes fl2{50%{transform:translateY(-10px)}}
+.f1{left:2%;top:40px}.f2{right:2%;top:10px;animation-delay:-2s}.f3{left:6%;top:300px;animation-delay:-4s}.f4{right:5%;top:270px;animation-delay:-1s}
+
+/* sections */
+.sec{padding:120px 0}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s}.rv.in{opacity:1;transform:none}
+.pb{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:64px}
+.pb .n{font-size:110px;font-weight:800;line-height:1;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1px rgba(168,85,247,.7);margin-bottom:14px}
+.pb h3{font-size:22px;margin-bottom:8px}.pb p{color:var(--m);font-size:15px}
+.dash{max-width:960px;margin:60px auto 0;border-radius:24px;border:1px solid #2b2b33;background:#0c0b10;display:grid;grid-template-columns:170px 1fr 230px;overflow:hidden;box-shadow:0 0 120px rgba(139,92,246,.3);transform:perspective(1600px) rotateX(6deg)}
+.dash>div{padding:18px}.dash .sb{border-right:1px solid var(--ln);font-size:13px;color:var(--m);display:grid;gap:6px;align-content:start}
+.dash .sb span{padding:8px 10px;border-radius:9px}.dash .sb .on{background:rgba(168,85,247,.18);color:#fff}
+.dash .fd{display:grid;gap:12px;align-content:start}
+.dash .rp{border-left:1px solid var(--ln);font-size:12px}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:center;background:#15141a;border-radius:12px;padding:12px;margin-bottom:9px;font-size:13px}
+.tag{font-size:10px;padding:3px 9px;border-radius:99px;background:rgba(168,85,247,.22);color:var(--l);white-space:nowrap}
+.pil{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:90px}
+.pil.rev>:first-child{order:2}
+.pil h3{font-size:clamp(28px,3.6vw,42px);line-height:1.1;letter-spacing:-.03em;margin:10px 0 14px}.pil p{color:var(--m)}
+.pil .k{font-size:12px;color:var(--v2);font-weight:700;letter-spacing:.12em}
+.vis{padding:20px;min-height:280px}
+.gr{display:grid;grid-template-columns:1fr 1fr;gap:10px}.gr .bx{background:#16161b;border-radius:13px;padding:11px;font-size:12px}
+.sr{background:#16161b;border-radius:99px;padding:10px 16px;font-size:12px;color:var(--m);margin-bottom:12px}
+.ms{display:grid;gap:12px;position:relative;padding-left:22px}.ms::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--v),var(--p))}
+.ms div{position:relative;font-size:13px}.ms div::before{content:"";position:absolute;left:-22px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--v2);box-shadow:0 0 12px var(--v2)}
+.ms div.o::before{background:#2a2a32;box-shadow:none}
+.cl{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:start;margin-top:64px}
+.bn{display:grid;gap:14px}.bn div{padding:20px;border-radius:16px;border:1px solid var(--ln);background:var(--k2)}
+.bn b{font-size:16px;display:block;margin-bottom:4px}.bn p{font-size:14px;color:var(--m)}
+.inst{padding:22px}.bar{display:grid;grid-template-columns:90px 1fr 30px;gap:10px;align-items:center;font-size:12px;margin-top:11px}.bar i{height:7px;border-radius:9px;background:linear-gradient(90deg,var(--v),var(--p));display:block}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:6px}.three div{background:#16161b;border-radius:12px;padding:12px;text-align:center}.three b{font-size:20px;display:block}
+.brw{max-width:880px;margin:56px auto 0;border-radius:20px;border:1px solid #2b2b33;background:#0c0b10;transform:perspective(1600px) rotateX(7deg);box-shadow:0 0 120px rgba(236,72,153,.22);overflow:hidden}
+.brw .bt{display:flex;gap:6px;padding:12px 16px;border-bottom:1px solid var(--ln);align-items:center}.brw .bt i{width:9px;height:9px;border-radius:50%;background:#3a3a42}.brw .bt span{margin:0 auto;font-size:11px;color:#71717a;background:#16161b;border-radius:99px;padding:3px 40px}
+.pg{display:grid;grid-template-columns:230px 1fr;gap:22px;padding:22px}
+.hk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.hk .gl{padding:24px;transition:transform .3s,border-color .3s}.hk .gl:hover{transform:translateY(-5px);border-color:rgba(168,85,247,.6)}
+.hk h3{font-size:19px;margin:14px 0 6px}.hk p{font-size:14px;color:var(--m)}
+.jr{display:flex;justify-content:center;flex-wrap:wrap;gap:0;margin-top:60px}
+.jr div{position:relative;padding:14px 22px;border:1px solid var(--ln);border-radius:99px;background:var(--k2);font-size:13px;font-weight:700;letter-spacing:.08em;margin:6px 0}
+.jr div:not(:last-child)::after{content:"";position:absolute;right:-24px;top:50%;width:24px;height:1px;background:linear-gradient(90deg,var(--v),var(--p))}
+.jr div:not(:last-child){margin-right:24px}
+.jr div:last-child{background:linear-gradient(120deg,var(--v),var(--p));border-color:transparent}
+.fin{position:relative;text-align:center;padding:150px 20px;overflow:hidden}
+.fin::before{content:"";position:absolute;left:50%;top:55%;width:900px;height:520px;max-width:120%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(236,72,153,.45),rgba(139,92,246,.28) 55%,transparent);filter:blur(30px)}
+.fin>*{position:relative}
+.fin .fc2{width:250px;margin:44px auto 0;padding:14px;text-align:left;font-size:12px;animation:fl2 6s ease-in-out infinite}
+footer{border-top:1px solid var(--ln);padding:56px 0 34px;font-size:13px;color:var(--m)}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:30px}footer h4{margin:0 0 12px;color:#fff;font-size:13px}footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}footer a:hover{color:var(--l)}
+.bt2{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:38px;padding-top:20px;border-top:1px solid var(--ln)}
+
+@media(max-width:900px){
+ .hero{padding:8px}.frame{padding:20px 16px 0;border-radius:26px}.hh{padding-top:44px}
+ .stage{height:auto;margin-top:36px;padding-bottom:30px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ .phone{position:relative;left:auto;margin:0 auto 10px;grid-column:1/3;transform:none;animation:none}
+ .fc{position:static;width:auto;animation:none}
+ .pb,.hk,.pil,.cl,.pg{grid-template-columns:1fr}.pil.rev>:first-child{order:0}.pil{gap:28px;margin-top:64px}
+ .dash{grid-template-columns:1fr;transform:none}.dash .sb,.dash .rp{display:none}.brw{transform:none}
+ .sec{padding:84px 0}.fg{grid-template-columns:1fr 1fr}.pb .n{font-size:84px}
+ .jr{flex-direction:column;align-items:center}.jr div{margin-right:0!important}.jr div:not(:last-child)::after{right:50%;top:auto;bottom:-14px;width:1px;height:14px}.jr div:not(:last-child){margin-bottom:14px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img,svg{max-width:100%}
+.btn{min-height:46px;justify-content:center}
+@media(min-width:1500px){
+ .w{max-width:1280px}.frame{max-width:1440px;padding:36px 40px 0}
+ h1{font-size:96px}h2{font-size:64px}.lead{font-size:18px;max-width:600px}
+ .stage{height:700px}.phone{transform:rotateY(-10deg) rotateX(5deg) scale(1.1)}.fc{width:250px}
+ .dash{max-width:1100px}.brw{max-width:1000px}.sec{padding:140px 0}
+}
+@media(min-width:1900px){.w{max-width:1360px}.frame{max-width:1560px}}
+@media(max-width:1040px){
+ .stage{height:auto;margin-top:36px;padding-bottom:30px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;perspective:none}
+ .phone{position:relative;left:auto;top:auto;margin:0 auto 14px;grid-column:1/-1;transform:none;animation:none}
+ .fc{position:static;width:auto;animation:none}
+ .dash{max-width:100%}.brw{max-width:100%}
+ .w{padding:0 28px}
+}
+@media(max-width:900px){
+ .stage{grid-template-columns:1fr 1fr}
+ .pg{grid-template-columns:1fr}.dash .fd{padding:16px}
+ h2 br{display:none}.c h2,.fin h2{max-width:560px;margin-left:auto;margin-right:auto}
+}
+@media(max-width:560px){
+ .w{padding:0 18px}
+ .frame{padding:16px 14px 0;border-radius:22px}
+ .top{font-size:9.5px;letter-spacing:.08em;gap:8px}.logo{font-size:16px}
+ .hh{padding-top:36px}
+ h1{font-size:clamp(34px,10.5vw,44px);line-height:1.05}h1 br{display:none}
+ h2{font-size:clamp(28px,8.4vw,36px)}
+ .lead{font-size:15px}
+ .cta{flex-direction:column;align-items:stretch}.cta .btn{width:100%}
+ .stage{grid-template-columns:1fr;margin-top:28px}
+ .phone{width:min(262px,78vw);height:auto;min-height:520px;margin-left:auto}
+ .sec{padding:64px 0}.fin{padding:96px 18px}
+ .pb{gap:28px;margin-top:40px}.pb .n{font-size:68px}
+ .pil{margin-top:48px}.pil h3{font-size:26px}.vis{padding:16px;min-height:0}
+ .gr{grid-template-columns:1fr}
+ .row{flex-wrap:wrap}
+ .three{gap:7px}.three b{font-size:17px}.bar{grid-template-columns:78px 1fr 24px;font-size:11px}
+ .brw .bt span{padding:3px 12px;font-size:10px;max-width:70%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .pg{padding:16px}
+ .jr div{font-size:11.5px;padding:12px 18px}
+ .fg{grid-template-columns:1fr}.bt2{flex-direction:column}
+ footer a{display:inline-block;padding:4px 0}
+ .fin .fc2{width:100%;max-width:280px}
+}
+@media(hover:none){.hk .gl:hover{transform:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<section class="hero"><div class="frame">
+ <div class="top"><a class="logo" href="#"><i>I</i>InSolze</a><span>STUDENT INNOVATION ECOSYSTEM</span></div>
+ <div class="hh">
+  <h1>Your Projects Deserve<br>A Bigger Stage.</h1>
+  <p class="lead" style="color:#c4c4cf">Build, showcase and grow beyond the classroom. InSolze transforms student projects into discoverable work, meaningful collaborations and opportunities.</p>
+  <div class="cta"><a class="btn b1" href="https://insolze.in/">Explore Projects</a><a class="btn b2" href="https://insolze.in/">Join InSolze</a></div>
+ </div>
+ <div class="stage">
+  <div class="phone" role="img" aria-label="InSolze app showing a student profile, project progress and badges"><div class="sc">
+   <div class="hd"><i></i><div><b>Aarav S.</b><small>@aarav.dev · Lucknow</small></div></div>
+   <div class="bx"><div class="th"></div><b>CampusConnect</b><br><small>React · Node.js</small><div class="pr"><span style="width:72%"></span></div><small>Milestone 3 of 4</small></div>
+   <div class="st"><div><b>6</b><small>Projects</small></div><div><b>3</b><small>Hackathons</small></div><div><b>4</b><small>Badges</small></div></div>
+   <div class="bx"><small>Community activity</small><br><span class="chip v">New collaborator</span><span class="chip">Update posted</span></div>
+  </div></div>
+  <div class="gl fc f1"><h3>Discover What’s Being Built</h3><div class="th"></div><b>SignLens</b><br><small>Python · OpenCV</small><br><span class="av"></span><span class="av b"></span> <small style="margin-left:14px">by @riya.codes</small></div>
+  <div class="gl fc f2"><h3>Work That Speaks</h3><span class="chip v">Hackathon finalist</span><span class="chip v">Milestone: v1.0</span><span class="chip">React badge</span><span class="chip">API badge</span></div>
+  <div class="gl fc f3"><h3>Build Together</h3><div><span class="av"></span><span class="av b"></span><span class="av c2"></span></div><p style="margin-top:12px"><small>2 collaboration requests<br>12 commits this week</small></p></div>
+  <div class="gl fc f4"><h3>Your Next Opportunity</h3><div class="row" style="padding:9px;margin:0 0 6px"><span>Internship preview</span><span class="tag">New</span></div><div class="row" style="padding:9px;margin:0"><span>Collab invite</span><span class="tag">1</span></div></div>
+ </div>
+</div></section>
+
+<section class="sec"><div class="w c rv">
+ <h2>Great Ideas Shouldn’t<br>End in Classrooms.</h2>
+ <p class="lead">Every year, students build innovative projects. But too many of those ideas disappear after submissions, competitions and college evaluations.</p>
+ <div class="pb" style="text-align:left">
+  <div><div class="n">01</div><h3>Invisible Innovation</h3><p>Great projects remain hidden within college boundaries.</p></div>
+  <div><div class="n">02</div><h3>Disconnected Execution</h3><p>Projects lose momentum after hackathons and academic submissions.</p></div>
+  <div><div class="n">03</div><h3>Missing Recognition</h3><p>Students lack continuous visibility, feedback and practical proof of their abilities.</p></div>
+ </div>
+</div></section>
+
+<section class="sec" style="padding-top:20px"><div class="w c rv">
+ <h2>Meet InSolze.<br>Where Ideas Keep Moving.</h2>
+ <p class="lead">A centralized ecosystem where student projects become discoverable, collaboration becomes possible and innovation gets room to grow.</p>
+ <div class="dash" style="text-align:left" role="img" aria-label="Illustrative InSolze platform dashboard">
+  <div class="sb"><span class="on">Discover</span><span>My projects</span><span>Hackathons</span><span>Collaborate</span><span>Achievements</span></div>
+  <div class="fd">
+   <div class="row"><span><b>CampusConnect</b><br><small>Web · @aarav.dev</small></span><span class="tag">Updated today</span></div>
+   <div class="row"><span><b>SignLens</b><br><small>AI/ML · @riya.codes</small></span><span class="tag">Seeking collaborators</span></div>
+   <div class="row"><span><b>PathFinder</b><br><small>Android · @kabir.dev</small></span><span class="tag">Hackathon entry</span></div>
+  </div>
+  <div class="rp"><b style="font-size:13px">Collaboration</b><div class="row" style="margin-top:10px"><span>Join SignLens<br><small>Needs frontend</small></span></div><b style="font-size:13px">Achievements</b><div class="row" style="margin-top:10px"><span>Finalist<br><small>Build Sprint</small></span></div></div>
+ </div>
+ <p class="il">Illustrative preview of the platform experience.</p>
+</div></section>
+
+<section class="sec" style="padding-top:20px"><div class="w">
+ <h2 class="c rv">More Than a Portfolio.<br>An Innovation Ecosystem.</h2>
+ <div class="pil rv"><div><div class="k">DISCOVERY</div><h3>Make Innovation Visible.</h3><p>Students can showcase projects and make their work discoverable beyond their classrooms.</p></div>
+  <div class="gl vis"><div class="sr">Search projects, skills, colleges…</div><span class="chip v">Web</span><span class="chip">Android</span><span class="chip">AI/ML</span><span class="chip">Research</span>
+   <div class="gr" style="margin-top:12px"><div class="bx"><div class="th"></div>CampusConnect<br><small>@aarav.dev</small></div><div class="bx"><div class="th b"></div>SignLens<br><small>@riya.codes</small></div></div></div></div>
+ <div class="pil rev rv"><div><div class="k">EXECUTION</div><h3>Keep Building Beyond Submission.</h3><p>Projects should have the potential to continue evolving through updates, collaboration and community participation.</p></div>
+  <div class="gl vis"><div class="ms"><div><b>v0.1 Prototype</b><br><small>Hackathon submission</small></div><div><b>v0.5 Public beta</b><br><small>Feedback from 2 contributors</small></div><div class="o"><b>v1.0 Launch</b><br><small>Planned</small></div></div><div style="margin-top:18px"><span class="av"></span><span class="av b"></span><span class="av c2"></span><small style="margin-left:14px">3 contributors</small></div></div></div>
+ <div class="pil rv"><div><div class="k">VALIDATION</div><h3>Turn Work Into Credibility.</h3><p>Showcase demonstrated skills, project achievements, hackathon participation and meaningful recognition.</p></div>
+  <div class="gl vis"><div class="row"><span><b>Build Sprint</b><br><small>Hackathon result</small></span><span class="tag">Finalist</span></div><div class="row"><span><b>CampusConnect v1.0</b><br><small>Project milestone</small></span><span class="tag">Shipped</span></div><span class="chip v">React</span><span class="chip v">Node.js</span><span class="chip v">REST APIs</span></div></div>
+</div></section>
+
+<section class="sec" style="padding-top:20px"><div class="w">
+ <div class="c rv"><h2>Empowering Institutions to Become<br>Innovation Hubs.</h2><p class="lead">InSolze helps institutions bring student innovation into one discoverable ecosystem, creating visibility for projects, talent and institutional achievements.</p></div>
+ <div class="cl rv">
+  <div class="bn">
+   <div><b>Centralized Project Showcase</b><p>Bring student projects from different departments and batches into one platform.</p></div>
+   <div><b>Innovation Visibility</b><p>Make institutional innovation and student achievements easier to discover and showcase.</p></div>
+   <div><b>Stronger Project Culture</b><p>Encourage students to build beyond academic submissions and continue developing their ideas.</p></div>
+   <div><b>Industry Connectivity</b><p>Create a foundation for companies, mentors and hiring partners to discover student work and emerging talent.</p></div>
+  </div>
+  <div><div class="gl inst" role="img" aria-label="Illustrative institutional innovation dashboard"><b>Institution overview</b><br><small>Sample data</small>
+   <div class="three" style="margin-top:14px"><div><b>128</b><small>Projects</small></div><div><b>6</b><small>Departments</small></div><div><b>14</b><small>Hackathon entries</small></div></div>
+   <div class="bar"><span>Computer Sci.</span><i style="width:90%"></i><span>48</span></div><div class="bar"><span>Electronics</span><i style="width:60%"></i><span>31</span></div><div class="bar"><span>Mechanical</span><i style="width:40%"></i><span>22</span></div><div class="bar"><span>Information Tech.</span><i style="width:55%"></i><span>27</span></div></div>
+  <p class="il">Illustrative data only. Not real institutional figures.</p></div>
+ </div>
+</div></section>
+
+<section class="sec" style="padding-top:20px"><div class="w c">
+ <div class="rv"><h2>Build a Profile That Goes<br>Beyond Your Resume.</h2><p class="lead">Your abilities deserve to be seen through the things you actually build.</p></div>
+ <div class="brw rv" style="text-align:left"><div class="bt"><i></i><i></i><i></i><span>insolze.in/@aarav.dev</span></div>
+  <div class="pg"><div><div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--l),var(--p));margin-bottom:12px"></div><b>Aarav S.</b><br><small>Student developer · Lucknow</small><p style="font-size:12px;color:var(--m);margin-top:10px">Interested in web, ML and open source.</p><div style="margin-top:10px"><span class="chip v">React</span><span class="chip v">Python</span><span class="chip">Node.js</span></div><p style="margin-top:12px"><small>github.com/aarav-dev</small></p></div>
+   <div><div class="gr"><div class="bx"><div class="th"></div>CampusConnect<br><small>Featured · Live</small></div><div class="bx"><div class="th b"></div>SignLens<br><small>Hackathon · Finalist</small></div></div>
+    <div class="row" style="margin-top:12px"><span>Collaboration history<br><small>Worked with @riya.codes, @kabir.dev</small></span><span class="tag">3 projects</span></div></div></div></div>
+ <p class="il">Illustrative profile.</p>
+</div></section>
+
+<section class="sec" style="padding-top:20px"><div class="w c rv">
+ <h2>Build. Compete. Collaborate. Repeat.</h2>
+ <p class="lead">Find challenges, discover builders, form teams and turn ideas into working products.</p>
+ <div class="hk" style="text-align:left">
+  <div class="gl"><span class="tag">Hackathons</span><h3>Find your challenge</h3><p>Browse competitions, check details and register from one place.</p></div>
+  <div class="gl"><span class="tag">Teams</span><h3>Form your team</h3><p>Discover builders with the skills your idea needs.</p></div>
+  <div class="gl"><span class="tag">Submissions</span><h3>Ship and submit</h3><p>Your entry stays on your profile and can keep growing after the event.</p></div>
+ </div>
+ <p class="il">Live hackathon listings are available on insolze.in.</p>
+</div></section>
+
+<section class="sec" style="padding-top:20px"><div class="w c rv">
+ <h2>From Campus Innovation<br>to Industry Impact.</h2>
+ <div class="jr"><div>STUDENT</div><div>PROJECT</div><div>DISCOVERY</div><div>COLLABORATION</div><div>VALIDATION</div><div>OPPORTUNITIES</div><div>STARTUP / INDUSTRY IMPACT</div></div>
+ <p class="lead">We envision a future where companies discover talent through actual execution, students find opportunities through their work, and promising projects get the support to grow into something bigger.</p>
+ <p class="il">A long-term vision and ambition, not a guaranteed outcome.</p>
+</div></section>
+
+<section class="fin"><h2>Don’t Let Your Best Work<br>Stay Unseen.</h2>
+ <p class="lead">Your next project could be your biggest opportunity. Start building your presence on InSolze.</p>
+ <div class="cta"><a class="btn b1" href="https://insolze.in/">Start Building</a><a class="btn b2" href="https://insolze.in/">Explore InSolze</a></div>
+ <div class="gl fc2"><b>CampusConnect</b><br><small>by @aarav.dev · Updated today</small><div class="pr"><span style="width:72%"></span></div></div>
+</section>
+
+<footer><div class="w"><div class="fg">
+ <div><a class="logo" href="#" style="color:#fff"><i>I</i>InSolze</a><p style="max-width:290px;margin-top:12px">A student innovation and proof-of-work ecosystem. Talent exists everywhere. Proof should be visible.</p></div>
+ <div><h4>Platform</h4><ul><li><a href="https://insolze.in/">Explore Projects</a></li><li><a href="https://insolze.in/">Hackathons</a></li><li><a href="https://insolze.in/">About Us</a></li></ul></div>
+ <div><h4>Legal</h4><ul><li><a href="https://insolze.in/">Privacy Policy</a></li><li><a href="https://insolze.in/">Terms and Conditions</a></li></ul></div>
+ <div><h4>Contact</h4><ul><li><a href="mailto:business@insolze.in">business@insolze.in</a></li><li>+91 85439 57115</li><li><a href="mailto:support@insolze.in">support@insolze.in</a></li><li>Lucknow, Uttar Pradesh, India</li></ul></div>
+</div><div class="bt2"><span>© 2026 InSolze. All rights reserved.</span><span>Made in Lucknow, India</span></div></div></footer>
+
+<script>
+(function(){
+ var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1}):null;
+ document.querySelectorAll('.rv').forEach(function(e){io?io.observe(e):e.classList.add('in')});
+})();
+</script>
+</body>
+</html>
